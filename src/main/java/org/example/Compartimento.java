@@ -21,4 +21,5 @@ public class Compartimento {
     public int getId() {
         return this.id;
     }
+
 }
