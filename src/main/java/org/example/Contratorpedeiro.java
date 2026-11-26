@@ -9,4 +9,12 @@ public class Contratorpedeiro extends Navio {
     public Contratorpedeiro(String nome, int tamanho) {
         super(nome, tamanho);
     }
+
+    public Contratorpedeiro() {
+        super();
+    }
+
+    public Contratorpedeiro(int tamanho, char simbolo) {
+        super(tamanho, simbolo);
+    }
 }
