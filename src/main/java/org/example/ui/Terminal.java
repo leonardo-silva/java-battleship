@@ -7,7 +7,7 @@ import org.example.Main;
 public class Terminal {
     public static void mostraTabuleiro(Jogador jogador) {
         System.out.println("<<< BATALHA NAVAL >>>");
-        System.out.println("Tabuleiro de " + jogador.getNickname() + ":");
+        System.out.println("Tabuleiro do jogador '" + jogador.getNickname() + "':");
         System.out.print("   ");
         for (int i = 0; i < Main.NCOLUNAS_TABULEIRO; i++) {
             System.out.print("  " + (i+1));
@@ -23,7 +23,7 @@ public class Terminal {
 
             for (Compartimento compartimento : linha) {
                 if (compartimento != null) {
-                    System.out.print(" X ");
+                    System.out.print(" " + compartimento.getNavio().getSimbolo() + " ");
                 } else {
                     System.out.print(" - ");
                 }

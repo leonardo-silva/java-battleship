@@ -41,4 +41,8 @@ public class Navio {
     public int getTamanho() {
         return this.tamanho;
     }
+
+    public char getSimbolo() {
+        return this.simbolo;
+    }
 }
